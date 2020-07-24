@@ -31,12 +31,6 @@ class Question(models.Model):
         max_length=11, choices=Type.choices, default=Type.TEXT
     )
 
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
-        if self.type == self.Type.TEXT:
-            if self.choices.count():
-                Choice.objects.create(question=self)
-
 
 class Poll(models.Model):
     """

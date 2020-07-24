@@ -11,6 +11,7 @@ pytest = "*"
 pytest-django = "*"
 drf-yasg = "*"
 django-filter = "*"
+pytest-cov = "*"
 
 [dev-packages]
 flake8 = "*"
