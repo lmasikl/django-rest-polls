@@ -17,3 +17,6 @@ migrate:
 
 run-dev:
 	@pipenv run ./manage.py runserver
+
+init-dev:
+	@pipenv run python manage.py loaddata initial_data.json
