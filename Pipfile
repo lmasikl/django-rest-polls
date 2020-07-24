@@ -12,6 +12,7 @@ pytest-django = "*"
 drf-yasg = "*"
 django-filter = "*"
 pytest-cov = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 flake8 = "*"
