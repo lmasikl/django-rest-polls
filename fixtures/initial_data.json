@@ -1,0 +1,25 @@
+[{
+        "model": "auth.User",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$phW6COYE5wwk$AVMgXRcyPY8knb9wEWlQtp7k9GU+9O3PMtgM2PqOHQo=",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "Test-Admin",
+            "is_staff": true,
+            "is_active": true
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$phW6COYE5wwk$AVMgXRcyPY8knb9wEWlQtp7k9GU+9O3PMtgM2PqOHQo=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Test-User",
+            "is_staff": false,
+            "is_active": true
+        }
+    }
+]
