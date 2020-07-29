@@ -8,6 +8,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .serializers import PollSerializer, QuestionSerializer, VoteSerializer
 
 from .models import Poll, Question, Vote
+from .filters import VoteFilter
 from .permissions import PollPermission, QuestionPermission
 
 
@@ -40,7 +41,7 @@ class VoteViewSet(viewsets.ModelViewSet):
     serializer_class = VoteSerializer
     filter_backends = (DjangoFilterBackend, )
     http_method_names = ('get', 'post')
-    filterset_fields = ('user', )
+    filterset_class = VoteFilter
 
     def perform_create(self, serializer):
         if self.request.user.is_authenticated:
